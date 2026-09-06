@@ -97,9 +97,16 @@
 
                 <!-- Maven JAR Plugin -->
                 <plugin>
-                    <artifactId>maven-jar-plugin</artifactId>
-                    <version>3.4.2</version>
-                </plugin>
+				    <artifactId>maven-jar-plugin</artifactId>
+				    <version>3.4.2</version>
+				    <configuration>
+				        <archive>
+				            <manifest>
+				                <mainClass>SE4.maven_project.App</mainClass>
+				            </manifest>
+				        </archive>
+				    </configuration>
+			</plugin>
 
                 <!-- Maven Install Plugin -->
                 <plugin>
